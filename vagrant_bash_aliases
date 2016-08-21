@@ -42,7 +42,7 @@ alias wpp="cd wp-content/plugins/ && ls"
 # Navigating
 alias home="cd ~"
 alias ..="cd .."
-alias vagrant="cd /vagrant && ls"
+alias vd="cd /vagrant && ls"
 
 # Git
 alias gs="git status"
