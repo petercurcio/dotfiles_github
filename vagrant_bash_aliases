@@ -2,6 +2,9 @@
 # Aliases
 # -------
 
+# Test
+alias test="echo 'Seems to be working...'"
+
 # Clear
 alias c='clear'
 alias cl='clear'
