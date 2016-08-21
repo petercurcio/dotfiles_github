@@ -14,6 +14,7 @@ alias cla='clear;ls -al'
 
 # List
 alias la='ls -al'
+alias ls='ls -a'
 
 # Editing and loading in updates to .bashrc/.bash_profile
 #alias sbash="source ~/.bashrc"
@@ -41,6 +42,7 @@ alias wpp="cd wp-content/plugins/ && ls"
 # Navigating
 alias home="cd ~"
 alias ..="cd .."
+alias vagrant="cd /vagrant && ls"
 
 # Git
 alias gs="git status"
