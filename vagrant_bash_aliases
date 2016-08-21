@@ -17,7 +17,7 @@ alias la='ls -al'
 
 # WP-CLI
 # alias wp='~/wp-cli.phar'
-alias wpall="bash /vagrant/wpUpdateAll.sh"
+alias wpall="cd /vagrant && bash wpUpdateAll.sh"
 
 # WP-CLI themes
 alias wpti='function _wpti() { wp theme install $1; };_wpti'
