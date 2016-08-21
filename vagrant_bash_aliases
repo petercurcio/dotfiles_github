@@ -4,6 +4,7 @@
 
 # Test
 alias test="echo 'Seems to be working...'"
+alias path="echo $PATH"
 
 # Clear
 alias c='clear'
