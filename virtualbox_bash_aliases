@@ -10,6 +10,12 @@ alias path="echo You are here: $PATH"
 alias sup="sudo apt-get update"
 alias supg="sudo apt-get update && sudo apt-get upgrade -y"
 
+# sudo apt autoclean
+alias sac="sudo apt autoclean"
+
+# sudo apt autoremove
+alias sar="sudo apt autoremove"
+
 # Clear
 alias c='clear'
 alias cl='clear'
