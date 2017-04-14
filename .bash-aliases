@@ -16,6 +16,9 @@ alias sac="sudo apt autoclean"
 # sudo apt autoremove
 alias sar="sudo apt autoremove"
 
+# sudo apt autoclean && sudo apt autoremove -y
+alias sarc="sudo apt autoclean && sudo apt autoremove -y
+
 # Clear
 alias c='clear'
 alias cl='clear'
