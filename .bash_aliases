@@ -14,10 +14,8 @@ alias supg="sudo apt-get update && sudo apt-get upgrade -y"
 
 # sudo apt autoclean
 alias sac="sudo apt-get autoclean"
-
 # sudo apt autoremove
 alias sar="sudo apt-get autoremove -y"
-
 # sudo apt autoclean && sudo apt autoremove -y
 alias sarc="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove -y"
 
@@ -63,7 +61,7 @@ alias vd="cd /vagrant && ls"
 alias gs="git status"
 alias ga.="git add ."
 alias gpom="git push origin master"
-alias glom="git pull origin master"
+alias gplom="git pull origin master"
 alias grv="git remote -v"
 
 # 1Password - launch browser helper
