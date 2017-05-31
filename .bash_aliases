@@ -28,10 +28,12 @@ function supg() {
 	echo ""
 	sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove -y
 
-	echo ""
-	echo "Refreshing snaps..."
-	echo ""
-	sudo snap refresh
+	if dpkg -l snapd | grep '^ii' >/dev/null 2>&1; then
+		echo ""
+		echo "Refreshing snaps..."
+		echo ""
+		sudo snap refresh
+	fi
 }
 
 # sudo apt autoclean
@@ -60,15 +62,15 @@ alias ls='ls -a'
 alias wpall="cd /vagrant; bash wpUpdateAll.sh"
 
 # WP-CLI themes
-alias wpti='function _wpti() { wp theme install $1; };_wpti'
-alias wpta='function _wpta() { wp theme activate $1; };_wpta'
-alias wptdl='function _wptdl() { wp theme delete $1; };_wptdl'
+# alias wpti='function _wpti() { wp theme install $1; };_wpti'
+# alias wpta='function _wpta() { wp theme activate $1; };_wpta'
+# alias wptdl='function _wptdl() { wp theme delete $1; };_wptdl'
 
 # WP-CLI plugins
-alias wppi='function _wppi() { wp plugin install $1; };_wppi'
-alias wppa='function _wppa() { wp plugin activate $1; };_wppa'
-alias wppd='function _wppd() { wp plugin deactivate $1; };_wppd'
-alias wppdl='function _wppdl() { wp plugin delete $1; };_wppdl'
+# alias wppi='function _wppi() { wp plugin install $1; };_wppi'
+# alias wppa='function _wppa() { wp plugin activate $1; };_wppa'
+# alias wppd='function _wppd() { wp plugin deactivate $1; };_wppd'
+# alias wppdl='function _wppdl() { wp plugin delete $1; };_wppdl'
 
 # Navigating in ssh
 alias wpt="cd wp-content/themes/ && ls"
