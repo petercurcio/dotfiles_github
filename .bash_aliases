@@ -6,11 +6,33 @@
 
 # Test
 alias test="echo 'Seems to be working...'"
-alias path="echo You are here: $PATH"
 
 # sudo apt-get update
 alias sup="sudo apt-get update"
-alias supg="sudo apt-get update && sudo apt-get upgrade -y"
+#alias supg="sudo apt-get update && sudo apt-get upgrade -y"
+alias supg="supg"
+
+function supg() {
+	echo ""
+	echo "Beginning update..."
+	echo ""
+	sudo apt-get update
+
+	echo ""
+	echo "Upgrading packages..."
+	echo ""
+	sudo apt-get upgrade -y
+
+	echo ""
+	echo "Cleaning up..."
+	echo ""
+	sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove -y
+
+	echo ""
+	echo "Refreshing snaps..."
+	echo ""
+	sudo snap refresh
+}
 
 # sudo apt autoclean
 alias sac="sudo apt-get autoclean"
