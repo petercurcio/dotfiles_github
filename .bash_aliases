@@ -4,6 +4,10 @@
 # Aliases
 # -------
 
+# Github repo details
+# git@github.com:petercurcio/dotfiles_github.git
+# https://github.com/petercurcio/dotfiles_github.git
+
 # Test
 alias test="echo 'Seems to be working...'"
 
