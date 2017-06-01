@@ -28,10 +28,12 @@ function supg() {
 	echo ""
 	sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove -y
 
-	echo ""
-	echo "Refreshing snaps..."
-	echo ""
-	sudo snap refresh
+	if dpkg -l snapd | grep '^ii' >/dev/null 2>&1; then
+		echo ""
+		echo "Refreshing snaps..."
+		echo ""
+		sudo snap refresh
+	fi
 }
 
 # sudo apt autoclean
