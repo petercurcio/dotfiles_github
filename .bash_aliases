@@ -4,12 +4,16 @@
 # Aliases
 # -------
 
+# Github repo details
+# git@github.com:petercurcio/dotfiles_github.git
+# https://github.com/petercurcio/dotfiles_github.git
+
 # Test
 alias test="echo 'Seems to be working...'"
 
 # sudo apt update
 alias sup="sudo apt update"
-#alias supg="sudo apt update && sudo apt-get upgrade -y"
+#alias supg="sudo apt update && sudo apt upgrade -y"
 alias supg="supg"
 
 function supg() {
@@ -21,7 +25,7 @@ function supg() {
 	echo ""
 	echo "Upgrading packages..."
 	echo ""
-	sudo apt-get upgrade -y
+	sudo apt upgrade -y
 
 	echo ""
 	echo "Cleaning up..."
@@ -36,11 +40,11 @@ function supg() {
 	fi
 }
 
-# sudo apt autoclean
+# sudo apt-get autoclean
 alias sac="sudo apt-get autoclean"
 # sudo apt autoremove
 alias sar="sudo apt autoremove -y"
-# sudo apt autoclean && sudo apt autoremove -y
+# sudo apt-get autoclean && sudo apt autoremove -y
 alias sarc="sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y"
 
 # Clear

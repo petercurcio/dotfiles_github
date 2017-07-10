@@ -8,16 +8,16 @@ alias path="echo You are here: $PATH"
 
 # sudo apt update
 alias sup="sudo apt update"
-alias supg="sudo apt update && sudo apt-get upgrade -y"
+alias supg="sudo apt update && sudo apt upgrade -y"
 
-# sudo apt autoclean
-alias sac="sudo apt autoclean"
+# sudo apt-get autoclean
+alias sac="sudo apt-get autoclean"
 
 # sudo apt autoremove
 alias sar="sudo apt autoremove"
 
-# sudo apt autoclean && sudo apt autoremove -y
-alias sarc="sudo apt autoclean && sudo apt autoremove -y"
+# sudo apt-get autoclean && sudo apt autoremove -y
+alias sarc="sudo apt-get autoclean && sudo apt autoremove -y"
 
 # Clear
 alias c='clear'
