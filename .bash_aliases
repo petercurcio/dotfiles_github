@@ -7,16 +7,16 @@
 # Test
 alias test="echo 'Seems to be working...'"
 
-# sudo apt-get update
-alias sup="sudo apt-get update"
-#alias supg="sudo apt-get update && sudo apt-get upgrade -y"
+# sudo apt update
+alias sup="sudo apt update"
+#alias supg="sudo apt update && sudo apt-get upgrade -y"
 alias supg="supg"
 
 function supg() {
 	echo ""
 	echo "Beginning update..."
 	echo ""
-	sudo apt-get update
+	sudo apt update
 
 	echo ""
 	echo "Upgrading packages..."
@@ -26,7 +26,7 @@ function supg() {
 	echo ""
 	echo "Cleaning up..."
 	echo ""
-	sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove -y
+	sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y
 
 	if dpkg -l snapd | grep '^ii' >/dev/null 2>&1; then
 		echo ""
@@ -39,9 +39,9 @@ function supg() {
 # sudo apt autoclean
 alias sac="sudo apt-get autoclean"
 # sudo apt autoremove
-alias sar="sudo apt-get autoremove -y"
+alias sar="sudo apt autoremove -y"
 # sudo apt autoclean && sudo apt autoremove -y
-alias sarc="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove -y"
+alias sarc="sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y"
 
 # Clear
 alias c='clear'
