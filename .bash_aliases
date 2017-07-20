@@ -40,6 +40,18 @@ function supg() {
 	fi
 }
 
+# For Arch-based distros using pacman pkg manager
+alias psup="psup"
+
+function psup() {
+	
+	echo ""
+	echo "Upgrading packages..."
+	echo ""
+	sudo pacman -Syu --noconfirm
+
+}
+
 # sudo apt-get autoclean
 alias sac="sudo apt-get autoclean"
 # sudo apt autoremove
