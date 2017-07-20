@@ -41,9 +41,9 @@ function supg() {
 }
 
 # For Arch-based distros using pacman pkg manager
-alias psup="psup"
+alias pup="pup"
 
-function psup() {
+function pup() {
 	
 	echo ""
 	echo "Upgrading packages..."
