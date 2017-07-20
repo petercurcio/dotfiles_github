@@ -11,6 +11,9 @@
 # Test
 alias test="echo 'Seems to be working...'"
 
+# Navigate to ~/Documents/new-vm-install-script/
+alias nvm="cd ~/Documents/new-vm-install-script/"
+
 # sudo apt update
 alias sup="sudo apt update"
 #alias supg="sudo apt update && sudo apt upgrade -y"
