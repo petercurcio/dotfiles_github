@@ -43,7 +43,19 @@ function supg() {
 	fi
 }
 
+
 # For Arch-based distros using pacman pkg manager
+alias pacup="pacup"
+
+function pacup() {
+	echo ""
+	echo "Upgrading packages..."
+	echo ""
+	sudo pacman -Syu --noconfirm
+}
+
+
+# For Arch-based distros using yaourt frontend for pacman pkg manager
 alias yup="yup"
 
 function yup() {
