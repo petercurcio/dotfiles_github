@@ -51,7 +51,10 @@ function yup() {
 	echo ""
 	echo "Upgrading packages..."
 	echo ""
-	sudo pacman -Syu --noconfirm
+	# sudo pacman -Syu --noconfirm
+	if ! pacman -Q yaourt 2>&1 >/dev/null; then
+		sudo pacman -S base-devel yaourt --needed --noconfirm
+	fi
 	yaourt -Syua --noconfirm
 
 }
