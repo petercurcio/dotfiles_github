@@ -44,14 +44,15 @@ function supg() {
 }
 
 # For Arch-based distros using pacman pkg manager
-alias pup="pup"
+alias yup="yup"
 
-function pup() {
+function yup() {
 	
 	echo ""
 	echo "Upgrading packages..."
 	echo ""
 	sudo pacman -Syu --noconfirm
+	yaourt -Syua --noconfirm
 
 }
 
