@@ -13,6 +13,7 @@ alias test="echo 'Seems to be working...'"
 
 # Navigate to ~/Documents/new-vm-install-script/
 alias nvm="cd ~/Documents/new-vm-install-script/"
+alias nvmg="cd ~/Documents/new-vm-install-script/ && git pull"
 
 # sudo apt update
 alias sup="sudo apt update"
